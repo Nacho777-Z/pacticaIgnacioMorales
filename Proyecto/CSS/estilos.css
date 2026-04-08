@@ -40,11 +40,18 @@ div{
   display: flex;
   flex-direction: row;
   margin-right: auto;
+  font-size: 30px;
+}
+.div1{
+font-size: 20px;
+display: flex;
+justify-content: left;
+
 }
 .titulo {
 font-family: 'Special+Elite', cursive; /* Fuente tipo máquina de escribir */
 letter-spacing: 5px;
-text-align: center;
+text-align: center; /*codigo del teacher*/
 margin-bottom: 10px;
 max-height:max-content;
 font-size: 1.4rem;
