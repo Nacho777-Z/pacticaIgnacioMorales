@@ -1,8 +1,13 @@
-/* IMPORTACIÓN DE FUENTES (Google Fonts)*/
-@import
-url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Special+Elite&display=swap')
-;
-/* RESET BÁSICO (Primeros estilos) */
+
+h1{
+  color: rgb(245, 79, 79);
+}
+.cita{
+    color: rgb(28, 155, 206);
+    top: 3%;
+    right: 5%;
+    position: absolute;
+}
 * {
 margin: 0;
 padding: 0;
@@ -10,16 +15,15 @@ box-sizing: border-box;
 }
 /* ESTILOS GENERALES (Selector de etiqueta)*/
 body {
-font-family: 'Inter', sans-serif;
-background-image: url(../img/street.jpg);
-background-size: contain;
-color: #333;
-line-height: 1.6;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-image: url(../img/superman11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
- 
-/* =========================
-HEADER Y NAVEGACIÓN
-========================= */
 header {
 background-color: #2b270b81;
 color: #fff;
@@ -28,11 +32,15 @@ position: sticky; /* Posicionamiento sticky */
 top: 0;
 z-index: 1000; /*Este elemento estará muy por encima de cualquier otro*/
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
 }
- 
+div{
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
 .titulo {
 font-family: 'Special+Elite', cursive; /* Fuente tipo máquina de escribir */
 letter-spacing: 5px;
@@ -49,7 +57,6 @@ list-style: none;
 gap: 20px;
 font-size: 0.9rem;
 }
- 
 .link {
 text-decoration: none;
 color: #fff;
@@ -80,24 +87,18 @@ margin-bottom: 15px;
 color: #584343;
 text-align: center;
 }
- 
-.imgpeq {
-border: solid white 8px;
-margin: 35px 0;
-float: right; /*que el texto envuelva la imagen*/
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
 /* =========================
 LISTAS
 ========================= */
 ul, ol {
 margin-left: 20px;
+display: flex;
+flex-direction: row;
+column-gap: 35px;
 }
 li {
- 
 margin-bottom: 8px;
 }
- 
 /* =========================
 TABLA (Box model)
 ========================= */
@@ -113,7 +114,6 @@ padding: 10px;
 background-color: #5e5a4b;
 color: white;
 }
- 
 /* =========================
 FORMULARIO
 ========================= */
@@ -132,8 +132,7 @@ width: 100%;
 max-width: 400px;
 border: 1px solid #ccc;
 border-radius: 5px;
-}
- 
+} 
 /* Botón */
 input[type="submit"] {
 background-color: #7e724b;
@@ -145,7 +144,6 @@ margin-top: 10px;
 input[type="submit"]:hover {
 background-color: #4b3d0c;
 }
- 
 /* GALERÍA (Grid + Flexbox alternativo) */
 .galeria {
 display: flex;
@@ -161,7 +159,6 @@ gap: 10px;
 align-content: center;
 justify-content: center
 }
- 
 .galeria img {
 width: 30%;
 height: 300px;
@@ -171,8 +168,7 @@ transition: transform 0.3s;
 }
 .galeria img:hover {
 transform: scale(1.1);
-}
- 
+} 
 /* =========================
 FOOTER
 ========================= */
@@ -183,3 +179,5 @@ background-color: #000;
 color: white;
 margin-top: 40px;
 }
+ 
+ 

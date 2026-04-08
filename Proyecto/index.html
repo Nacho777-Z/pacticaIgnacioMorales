@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>The symbol of hope</title>
     <style>
         h1{
-            background-color: skyblue;
-            width: 1000px ;
+            font-family: "playfai Display", serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 7rem;
         }
+        
         img{
             height: 600px;
         }
@@ -17,32 +26,31 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
-      
-
     </style>
 </head>
 <body>
-    
     <header>
+        <div class="div1">
         <h1>Superman</h1>
-        <h2><strong>"Superman is a character who is good, who is filled with hope,<br>
+        <h2 class="cita"><strong>"Superman is a character who is good, who is filled with hope,<br>
             he saved people because is the right thing to do,<br>
              we could use a little bit more of that"</strong></h2>
-             <hr>
+         </div>
+         
+         <div>
          <nav>
             <ul>
-                <li><a href="#S1">Historia</a></li>
-                <li><a href="#S2">Información</a></li>
-                <li><a href="#S3">Ficha tecnica</a></li>
-                <li><a href="#S4">Registro de fans</a></li>
-                <li><a href="#S5">Galería</a></li>
-                <li><a href="#S6">Otro personaje</a></li>
+                <li><a class="link" href="#S1">Historia</a></li>
+                <li><a class="link" href="#S2">Información</a></li>
+                <li><a class="link" href="#S3">Ficha tecnica</a></li>
+                <li><a class="link" href="#S4">Registro de fans</a></li>
+                <li><a class="link" href="#S5">Galería</a></li>
+                <li><a href="#S6" class="link">Otro personaje</a></li>
             </ul> 
          </nav>
+           </div>
     </header>
-    <br>
             <main>
-
             <section>
                 <!--Historia-->
         <h2 id="S1">Enviado de bebé a la Tierra desde el moribundo planeta Krypton, Kal-El fue adoptado por Martha y Jonathan Kent de Smallville,
@@ -50,14 +58,10 @@
               se convirtió en Superman, manteniendo aún su identidad secreta como Clark Kent,
              que trabaja en el Daily Planet </h2>
              <img src="img/superman8.jpg">
-             <br>
-             <br>
              <a href="https://superman-fandom-com.translate.goog/wiki/Superman?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" target="_blank">Ver mas inforación</a>
 
           </section>
            </main>
-             <hr>
-             <br>
            <section>
             <!--Información-->
             <h3 id="S2">
@@ -183,7 +187,7 @@
             <br>
             <form>
                 <input type="submit" value="Registrarse">
-                <input type="reset" value="Borrar">
+                <input type="reset" value="Borrar" name="borrar">
             </form>
            </section>
            
@@ -202,12 +206,8 @@
         <br>
 
         <footer>
-            <p>Creado por José Ignacio Morales flores</p>
+            <p><strong> By José Ignacio Morales flores</strong></p>
             <p>Todos los derechos reservados</p>
         </footer>
-
-    
-
-
 </body>
 </html>
