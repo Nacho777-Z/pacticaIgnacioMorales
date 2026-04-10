@@ -7,4 +7,9 @@
     width: 50%;
     margin: 25px;
     padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+img{
+    width: 75%;
 }
