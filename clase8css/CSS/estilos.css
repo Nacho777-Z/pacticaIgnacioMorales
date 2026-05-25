@@ -8,6 +8,8 @@ body{
 header{
     text-align: center;
     padding: 33px;
+    display: flex;
+    flex-direction: row;
 }
 
 .container{
